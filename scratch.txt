@@ -1,0 +1,33 @@
+ npx tailwindcss -o dist/styles.css --watch            
+
+   <div class="flex items-center justify-center h-full">
+    <h3>Hello</h3>
+    <button class="text-bold">Submit</button>
+  </div>
+
+
+
+import { Component, ViewEncapsulation } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
+
+@Component({
+  selector: 'app-home',
+  imports: [ButtonModule],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css',
+  encapsulation: ViewEncapsulation.None
+})
+export class HomeComponent {
+
+}
+
+
+<div
+  class="flex flex-col h-screen fixed w-screen bg-white justify-center items-center"
+>
+  <app-navbar class="w-screen border-2 border-green-500"></app-navbar>
+  <div class="flex-1 w-screen border-2 items-center border-black h-full">
+    <router-outlet class=""></router-outlet>
+  </div>
+  <app-footer class="w-screen border-pink-600 border-2"></app-footer>
+</div>

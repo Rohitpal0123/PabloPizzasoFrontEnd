@@ -1,0 +1,15 @@
+<div class="card">
+  <p-drawer header="Left Drawer" [(visible)]="visible" position="left">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat.
+    </p>
+  </p-drawer>
+
+  <div class="flex gap-2 justify-center">
+    <button id="drawerButton" type="button" (click)="visible = true">
+      <i class="fa-solid fa-bars text-[28px] my-2 text-[#f40639] hover:text-white  px-2 py-1 border-[#f40639] hover:bg-[#f40639]  rounded-md border-[1.5px]"></i>
+    </button>
+  </div>
+</div>
