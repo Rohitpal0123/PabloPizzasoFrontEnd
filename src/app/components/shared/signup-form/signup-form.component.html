@@ -1,7 +1,7 @@
 <div class="flex shadow-2xl border-rose-300 px-8 rounded-xl">
   <div class="flex-row">
-    <p class="text-3xl font-bold text-center mt-7 mb-4 text-rose-400">Signup</p>
-    <form action="">
+    <p class="text-3xl font-bold text-center mt-7 mb-4 text-[#f40639]">Signup</p>
+    <form (ngSubmit)="onSubmit($event)">
       <div class="flex py-2 ">
         <div class="flex flex-col">
           <label for="firstName" class="text-slate-700 pb-[1px] text-sm font-semibold">
@@ -11,6 +11,7 @@
             type="text"
             id="firstName"
             name="firstName"
+            [(ngModel)]="firstName"
             placeholder="First Name"
             required
             class="border py-1 pl-2 rounded-sm px-[2px] text-sm  focus:outline-rose-200"
@@ -24,6 +25,7 @@
             type="text"
             id="lastName"
             name="lastName"
+            [(ngModel)]="lastName"
             placeholder="Last Name"
             required
             class="border py-1 pl-2 rounded-sm px-[2px] text-sm  focus:outline-rose-200"
@@ -36,6 +38,7 @@
           type="email"
           id="email"
           name="email"
+          [(ngModel)]="email"
           placeholder="pablopiccaso@gmail.com"
           required
           class="border py-1 pl-2 rounded-sm px-[2px] text-sm  focus:outline-rose-200"
@@ -47,12 +50,13 @@
           type="password"
           id="password"
           name="password"
+          [(ngModel)]="password"
           placeholder="Password"
           required
           class="border py-1 pl-2 rounded-sm px-[2px] text-sm  focus:outline-rose-200"
         />
       </div>
-      <button type="submit" class="bg-red-800 hover:bg-red-700 text-white font-sans text-md rounded-md py-2 w-full mt-4 mb-3">
+      <button type="submit" class="bg-[#e11d48] hover:bg-red-700 text-white font-sans text-md rounded-md py-2 w-full mt-4 mb-3">
         Send OTP 
       </button>
       <div class="mb-4 flex items-center">

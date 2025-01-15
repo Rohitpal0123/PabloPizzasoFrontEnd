@@ -6,14 +6,13 @@ import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import Nora from '@primeng/themes/nora';
 import { provideHttpClient } from '@angular/common/http';
-
-
-
+import { MessageService } from 'primeng/api';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(),
+    MessageService,
     provideRouter(routes),
     provideAnimationsAsync(),
     provideAnimationsAsync(),
