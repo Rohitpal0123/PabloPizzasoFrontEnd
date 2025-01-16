@@ -1,15 +1,84 @@
 <div class="card">
-  <p-drawer header="Left Drawer" [(visible)]="visible" position="left">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-      aliquip ex ea commodo consequat.
-    </p>
+  <p-drawer [(visible)]="visible" position="left">
+    <ng-template pTemplate="header">
+      <div class="flex items-center">
+        <img style="width: 35px" src="drawerPizza.svg" alt="Pizza" />
+        <p
+          class="ml-3 text-2xl italic text-center text-rose-600 font-bold font-serif"
+        >
+          PabloPizzaso
+        </p>
+      </div>
+    </ng-template>
+    <p-divider
+      layout="horizontal"
+      class="!flex md:!hidden"
+      align="center"
+    ></p-divider>
+
+    <div class="flex flex-col gap-2 ml-2">
+      <button
+        type="button"
+        routerLink="/home"
+        (click)="visible = false"
+        class="flex items-center hover:bg-[#f40639] text-2xl hover:text-[28px] pl-3 py-3 hover:pl-5 text-[#f40639] hover:text-white rounded-md"
+      >
+        <i class="fa-solid fa-house"></i>
+        <p class="ml-4 font-semibold">Home</p>
+      </button>
+      <button
+        type="button"
+        routerLink="/cart"
+        (click)="visible = false"
+        class="flex items-center hover:bg-[#f40639] text-2xl hover:text-[28px] pl-3 py-3 hover:pl-5 text-[#f40639] hover:text-white rounded-md"
+      >
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p class="ml-4 font-semibold">Cart</p>
+      </button>
+      <button
+        type="button"
+        routerLink="/orders"
+        (click)="visible = false"
+        class="flex items-center hover:bg-[#f40639] text-2xl hover:text-[28px] pl-3 py-3 hover:pl-5 text-[#f40639] hover:text-white rounded-md"
+      >
+        <i class="fa-solid fas fa-receipt"></i>
+        <p class="ml-4 font-semibold">Orders</p>
+      </button>
+      <button
+        type="button"
+        routerLink="/favourites"
+        (click)="visible = false"
+        class="flex items-center hover:bg-[#f40639] text-2xl hover:text-[28px] pl-3 py-3 hover:pl-5 text-[#f40639] hover:text-white rounded-md"
+      >
+        <i class="fa-solid fa-heart"></i>
+        <p class="ml-4 font-semibold">Favourites</p>
+      </button>
+      <button
+        type="button"
+        routerLink="/support"
+        (click)="visible = false"
+        class="flex items-center hover:bg-[#f40639] text-2xl hover:text-[28px] pl-3 py-3 hover:pl-5 text-[#f40639] hover:text-white rounded-md"
+      >
+        <i class="fa-solid fas fa-headset"></i>
+        <p class="ml-4 font-semibold">Help & Support</p>
+      </button>
+      <button
+        type="button"
+        routerLink="/about"
+        (click)="visible = false"
+        class="flex items-center hover:bg-[#f40639] text-2xl hover:text-[28px] pl-3 py-3 hover:pl-5 text-[#f40639] hover:text-white rounded-md"
+      >
+        <i class="fa-solid fa-circle-info"></i>
+        <p class="ml-4 font-semibold">About Us</p>
+      </button>
+    </div>
   </p-drawer>
 
   <div class="flex gap-2 justify-center">
     <button id="drawerButton" type="button" (click)="visible = true">
-      <i class="fa-solid fa-bars text-[28px] my-2 text-[#f40639] hover:text-white  px-2 py-1 border-[#f40639] hover:bg-[#f40639]  rounded-md border-[1.5px]"></i>
+      <i
+        class="fa-solid fa-bars text-[26px] my-2 text-[#f40639] hover:text-white px-2 py-1 border-[#f40639] hover:bg-[#f40639] rounded-md border-[1.5px]"
+      ></i>
     </button>
   </div>
 </div>

@@ -9,3 +9,13 @@
 @tailwind components;
 @tailwind utilities;
 }
+
+:root {
+  .p-button {
+    @apply bg-white border-white hover:bg-white;
+
+  }
+  .p-menu {
+    @apply bg-white border-white;
+  }
+}
