@@ -1,4 +1,6 @@
-<div class="card flex justify-center">
-  <p-menu #menu [model]="items" [popup]="true" />
-  <button (click)="menu.toggle($event)" class="border-[1.5px] text-4xl mr-3 rounded-full p-1 border-[#f40639]">RP</button>
+<div class="card rounded-2xl flex justify-center mr-3">
+  <p-menu #menu [model]="items" [popup]="true" id="custom-menu" />
+  <button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v">
+    <img src="avatar.svg" alt="avatar" class="w-10 h-10 " />
+  </button>
 </div>

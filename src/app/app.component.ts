@@ -13,7 +13,6 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 export class AppComponent {
   
   title = 'PabloPizzasoFrontEnd';
-  shouldRun = true;
 
   toggleDarkMode() {
     const element: any = document.querySelector('html');
