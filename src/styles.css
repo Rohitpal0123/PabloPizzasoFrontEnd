@@ -24,4 +24,12 @@
     @apply hover:text-red-500;
   }
 
+  #skeletonCard {
+    @apply bg-white border-slate-300 shadow-xl rounded-xl ;
+  }
+
+  .p-skeleton {
+    @apply rounded-lg ;
+  }
+
 }
