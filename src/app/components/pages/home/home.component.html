@@ -1,4 +1,10 @@
-<div class="my-8 mx-12">
-  <!-- <app-card-skeleton></app-card-skeleton> -->
-   <app-pizza-grid></app-pizza-grid>
+<app-filter (onVegFilter)="filterVeg($event)"></app-filter>
+<div class="my-4 mx-12">
+  <div></div>
+  <div *ngIf="isLoading">
+    <app-card-skeleton></app-card-skeleton>
+  </div>
+  <div *ngIf="!isLoading">
+    <app-pizza-grid [products]="filteredProducts"></app-pizza-grid>
+  </div>
 </div>

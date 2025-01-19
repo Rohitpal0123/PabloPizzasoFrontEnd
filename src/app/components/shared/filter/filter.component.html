@@ -1,0 +1,15 @@
+<div class="flex mt-3 ml-14 items-center">
+  <button
+    class="py-[2px] px-[2px] border-[1px] rounded-xl w-12 text-xl border-slate-300 text-gray-500 hover:bg-slate-100 hover:shadow-md"
+  >
+    <i class="fa-solid fa-sliders"></i>
+  </button>
+  <p-divider layout="vertical" class="text-black bg-black"></p-divider>
+  <button
+    (click)="onVegToggle()"
+    [ngClass]="{'bg-[#f40369] text-white': isVeg, 'bg-white text-gray-600': !isVeg}"
+    class="border-[1px] rounded-xl px-[12px] py-[5px] text-sm border-slate-300  hover:shadow-md"
+  >
+    Pure Veg
+  </button>
+</div>

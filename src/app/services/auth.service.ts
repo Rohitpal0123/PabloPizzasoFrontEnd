@@ -16,7 +16,7 @@ export class AuthService {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const body = login;
 
-    return this.http.post<any>(`${this.baseUrl}login`, body, { headers });
+    return this.http.post<any>(`${this.baseUrl}login`, body, { headers, withCredentials: true });
   }
 
   signup(signup: Signup): Observable<any> {

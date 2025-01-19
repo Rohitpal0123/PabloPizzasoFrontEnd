@@ -15,8 +15,12 @@
     @apply bg-white border-white hover:bg-white;
   }
   .p-menu {
-    @apply bg-white border-white rounded-lg;
+    @apply bg-gray-100 rounded-t-lg border-[1.5px];
   } 
+
+ .p-menu-list {
+  @apply p-0 gap-0 rounded-lg;
+ }
   .p-ripple {
     @apply bg-white border-white hover:bg-[#e7899e];
   }
@@ -30,6 +34,10 @@
 
   .p-skeleton {
     @apply rounded-lg ;
+  }
+
+  .p-divider {
+    @apply text-black bg-black;
   }
 
 }

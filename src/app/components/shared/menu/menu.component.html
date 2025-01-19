@@ -1,6 +1,7 @@
-<div class="card rounded-2xl flex justify-center mr-3">
-  <p-menu #menu [model]="items" [popup]="true" id="custom-menu" />
-  <button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v">
-    <img src="avatar.svg" alt="avatar" class="w-10 h-10 " />
+<div class="card rounded-2xl flex justify-center mr-3 ">
+  <p-menu #menu [model]="items" [popup]="true" id="custom-menu" class="bg-gray-100 border-b border-gray-200" />
+  <button (click)="menu.toggle($event)" class="rounded-full">
+    <img src="avatar.svg" alt="avatar" class="w-10 h-10 rounded-full" />
   </button>
 </div>
+

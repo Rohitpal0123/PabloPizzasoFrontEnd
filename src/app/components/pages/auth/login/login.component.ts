@@ -7,6 +7,7 @@ import {ToastModule} from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { NgIf } from '@angular/common';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ import { NgIf } from '@angular/common';
 export class LoginComponent {
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
   ) {}
 
   onLoginSubmit(credentials: Login) {
